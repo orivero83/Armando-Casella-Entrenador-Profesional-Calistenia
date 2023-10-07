@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Trainer</title>
+    <!---custom css link--->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!---Icons link--->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <!-- ------------------------------ BTN LOGO ------------------------------- -->
+
+    <header>
+
+        <a href="#" class="btn-neon-morado">
+            <!-- ------------------- <img src="Logo.png" alt="Logo"> ------------------- -->
+            <span id="span1-morado"></span>
+            <span id="span2-morado"></span>
+            <span id="span3-morado"></span>
+            <span id="span4-morado"></span>
+            HOME
+        </a>
+
+        <!-- ---------------------------- FIN BTN LOGO ----------------------------- -->
+
+        <!-- ------------------------------ Translate ------------------------------ -->
+
+        <a href="#" class="btn-neon-morado" onclick="toggleDiv()">
+            <!-- ------------------- <img src="Logo.png" alt="Logo"> ------------------- -->
+            <span id="span1-morado"></span>
+            <span id="span2-morado"></span>
+            <span id="span3-morado"></span>
+            <span id="span4-morado"></span>
+            LANGUAGE
+        </a>
+        <div id="google_translate_element" style="display: none" class="btn-neon-morado"></div>
+
+        <!-- ------------------------------ FIN Translate ------------------------------ -->
+    </header>
+    <!--  Navbar Section End -->
+
+
+    <!-- Home Section Start-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h2>Step up your Personal Training and Fitness</h2>
+            <h1><span>Infinite </span>Calisthenics</h1>
+
+        </div>
+    </section>
+    <!-- Home Section End-->
+
+
+    <!-- -------------------------- TEXTO intermedio --------------------------- -->
+
+    <div class="text-intermedio">
+        <h3>"Looking to lead a healthy lifestyle and achieve the perfect physique?</h3>
+        <h1>"Infinite Calisthenics"</h1>
+        <h2>is your ultimate choice.</h2>
+        <h3> We'll tailor a personalized training program and optimize your diet,</h3>
+        <h3> helping you reach your dream body shape in no time."</h3>
+    </div>
+
+
+
+    <!-- ------------------------------ TARJETAS ------------------------------- -->
+    <div class="container">
+        <!-- ------------------------------- Card 1 -------------------------------- -->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>In the park</h2>
+                <p>You are one of those who prefers to train in a park and be in contact with nature while enjoying the
+                    outdoors.</p>
+                <a href="https://drive.google.com/file/d/14hTpKsxmUqNKtwxVBQycbqQQshYXM0RC/view?usp=drive_link"
+                    download="CV es Oscar Rivero.pdf" class="btn">
+                    Download Rutine
+                </a>
+            </div>
+        </div>
+        <!-- ------------------------------- Card 2 -------------------------------- -->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Cardio</h2>
+                <p>Is your health or fitness goal primarily focused on cardiovascular endurance and calorie burning?</p>
+                <a href="https://drive.google.com/file/d/14hTpKsxmUqNKtwxVBQycbqQQshYXM0RC/view?usp=drive_link"
+                    download="CV es Oscar Rivero.pdf" class="btn">
+                    Download Rutine
+                </a>
+            </div>
+        </div>
+        <!-- ------------------------------- Card 3 -------------------------------- -->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>At home</h2>
+                <p>When training at home, you have complete control over your training environment. You can customize
+                    your music, temperature and TIME.</p>
+                <a href="https://drive.google.com/file/d/14hTpKsxmUqNKtwxVBQycbqQQshYXM0RC/view?usp=drive_link"
+                    download="CV es Oscar Rivero.pdf" class="btn">
+                    Download Rutine
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------- FIN tarjetas ----------------------------- -->
+
+    <!-- About Section Start-->
+    <section class="about">
+        <div id="buttons-container">
+            <div class="half-border-button">
+                <span class="left-half"></span>
+                <span class="right-half"></span>
+                <img src="portada.png" alt="Foto Armando">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <h2>About Me</h2>
+            <h4>Hello, I'M Here To Help you!</h4>
+            <p>
+                Hi, I'm Armando Casella, a dedicated calisthenics specialist personal trainer. I'm passionate about
+                helping individuals achieve their fitness goals through the power of bodyweight exercises and
+                calisthenics.
+            </p>
+            <p>
+                With years of experience in the field, I've honed my expertise in designing customized calisthenics
+                workout programs tailored to your specific needs and objectives.
+            </p>
+            <a href="#contact" class="btn-neon-morado">Contact Me</a>
+        </div>
+
+    </section>
+    <!-- About Section End-->
+
+    <!-- ----------------------------- start video ----------------------------- -->
+
+    <section class="video-video">
+
+        <div class="video-container">
+            <div class="videos">
+                <div class="left">
+                    <video id="videoPlayer" autoplay muted loop>
+                        <source src="video1.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+
+                    <ul class="navigation">
+                        <li onclick="toggleVideo('video1.mp4')"><img src="v1.png" alt="test"></li>
+                        <li onclick="toggleVideo('video2.mp4')"><img src="v2.png" alt="test"></li>
+                        <li onclick="toggleVideo('video3.mp4')"><img src="v3.png" alt="test"></li>
+                        <li onclick="toggleVideo('video4.mp4')"><img src="v4.png" alt="test"></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------ video btn ------------------------------ -->
+        <div class="video-btn">
+
+            <button class="btn-neon-morado" id="playPauseButton" onclick="playPauseVideo()"><span
+                    id="span1-morado"></span>
+                <span id="span2-morado"></span>
+                <span id="span3-morado"></span>
+                <span id="span4-morado"></span>Play</button>
+            <button class="btn-neon-morado" id="muteUnmuteButton" onclick="muteUnmuteVideo()"><span
+                    id="span1-morado"></span>
+                <span id="span2-morado"></span>
+                <span id="span3-morado"></span>
+                <span id="span4-morado"></span>Mute</button>
+        </div>
+    </section>
+
+    <!-- ----------------------------- End videos ------------------------------ -->
+
+    <!-- EJERCICIO en el Parque Section start -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>Social Media</h2>
+            <h3>Follow me</h3>
+
+        </div>
+        <div class="portfolio-content">
+            <div class="port">
+                <a href="https://www.instagram.com/armandocasella/?hl=es-la">
+                    <img src="insta.png" alt=""></a>
+
+                <div class="main-box">
+                </div>
+                <a href="https://www.instagram.com/armandocasella/?hl=es-la">
+                    <h3>Instagram</h3>
+                </a>
+
+            </div>
+            <div class="port">
+                <a href="https://www.facebook.com/armando.casella">
+                    <img src="face.png" alt=""></a>
+                <div class="main-box">
+                </div>
+                <a href="https://www.facebook.com/armando.casella">
+                    <h3>Facebook</h3>
+                </a>
+            </div>
+            <div class="port">
+                <a href="https://www.tiktok.com/@armandocasella?_t=8YjZBBYw0qz&_r=1">
+                    <img src="Tik.png" alt=""></a>
+                <div class="main-box">
+                </div>
+                <a href="https://www.tiktok.com/@armandocasella?_t=8YjZBBYw0qz&_r=1">
+                    <h3>TikTok</h3>
+                </a>
+            </div>
+    </section>
+
+    <!-- Portfolio Section End -->
+    <!-- ----------------------------- Testimonio ------------------------------ -->
+    <section class="testimonial-section">
+        <div class="testimonial-bg"></div>
+        <div class="testimonial-content">
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide">
+                    <img src="tes1.png" alt="">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque nibh at odio
+                        convallis, ac porttitor elit pharetra."</p>
+                    <p class="testimonial-author">Madona</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="tes2.png" alt="">
+                    <p>"Otro testimonio interesante. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                    <p class="testimonial-author">George Clooney</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="tes3.png" alt="">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque nibh at odio
+                        convallis, ac porttitor elit pharetra."</p>
+                    <p class="testimonial-author">Michael Jackson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN testimonios -->
+
+
+    <!-- --------------------------- BMI calculator ---------------------------- -->
+    <section >
+        <div class="bmi-heading">
+            <h1>BMI Calculator</h1>
+            <h4> Underweight: BMI less than 18.5</h4>
+            <h4> Ideal weight: BMI between 18.5 and 24.9</h4>
+            <h4> Overweight: BMI greater than or equal to 25 </h4>
+        </div>
+        <div class="bmi">
+            <div>
+                <form id="bmiForm">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" required><br><br>
+
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" required><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="select">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+
+                    </select><br><br>
+
+                    <label class="bmi-label "  for="activity">Activity Factor:</label>
+                    <select id="activity" name="activity">
+                        <option value="select">Select</option>
+                        <option value="1.2">Sedentary (little or no exercise)</option>
+                        <option value="1.375">Lightly active (light exercise/sports 1-3 days/week)</option>
+                        <option value="1.55">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                        <option value="1.725">Very active (hard exercise/sports 6-7 days/week)</option>
+                        <option value="1.9">Super active (very hard exercise/sports & physical job or 2x training)
+                        </option>
+                    </select><br><br>
+
+                    <input class="input-button" type="button" value="Calculate" onclick="calculateBMI()">
+                    <input class="input-button" type="reset" value="Reset" onclick="resetForm()">
+                </form>
+
+                <h2>Your BMI</h2>
+                <div id="result"></div>
+            </div>
+            <div class="bmi-image">
+                <img src="bmi.png" alt="">
+
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------- FIN BMI calculator -------------------------- -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+            <h4>Contact With Us Any Time</h4>
+            <p>Lorem ipsum, dolor st. Fugit, harum sunt! Totam officia maiores
+                praesentium?</p>
+            <div class="contact-list">
+                <ul>
+                    <li>Italy</li>
+                    <li>acasellabrito@gmail.com</li>
+                    <li>+393475969523</li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@armandocasella?_t=8YjZBBYw0qz&_r=1"><i class="bx bxl-tiktok"></i></a>
+                <a href="https://www.facebook.com/armando.casella"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/armandocasella/?hl=es-la"><i class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/+393475969523"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form id="form">
+                <input type="text" name="sendername" id="sendername" placeholder="Sender name" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message"
+                    required></textarea>
+                <input class="btn-neon-morado" type="submit" id="button" value="Send Email">
+                <div id="messageBox" class="message-box"></div>
+            </form>
+        </div>
+
+    </section>
+    <!-- Contact Section End -->
+    <div class="hr"></div>
+    <div class="copyright">
+            &copy; 2023 Oscar Rivero. Todos los derechos reservados.
+    </div>
+
+    <!---custom js links--->
+    <!--emailjs  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('SefSbCS1D2dlw90kp')
+    </script>
+
+    <!-- ------------------------- GoogleApi translate ------------------------- -->
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        } 
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <!-- ------------------------------- js link ------------------------------- -->
+    <script src="script.js"></script>
+    <!-- ------------------------------- tiktok -------------------------------- -->
+</body>
+
+</html>
