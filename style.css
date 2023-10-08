@@ -888,14 +888,14 @@ form textarea:focus {
 }
 
 
-@media (max-width: 1025px){
+@media (max-width: 1025px) {
     .home {
         margin-left: 15px;
     }
 
     .text-intermedio {
         margin-left: 35px;
-    } 
+    }
 
     .home-text {
         margin-left: 30px;
@@ -913,7 +913,7 @@ form textarea:focus {
 
     .videos {
         margin-left: 32px;
-       
+
     }
 
     .video-btn {
@@ -1065,8 +1065,6 @@ form textarea:focus {
 
 
 
-
-
 @media (max-width: 830px) {
     :root {
         --heading-font: 3.7rem;
@@ -1106,16 +1104,13 @@ form textarea:focus {
 }
 
 
-
-
-
 @media (max-width: 720px) {
 
     #logo {
         display: none;
 
     }
-    
+
     :root {
         --heading-font: 3.5rem;
         --second-heading: 2.2rem;
@@ -1175,27 +1170,121 @@ form textarea:focus {
     }
 
 }
+/* -------------------------------- MEDIA 500 ------------------------------- */
 
 
+@media (max-width: 501px) {
+
+    header {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+    #logo {
+        display: none;
+    }
+
+    
+
+    .home-text {
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .text-intermedio {
+        padding-right: 70px;
+    }
+
+
+
+    .container {
+        margin-left: 15px;
+    }
+
+    .about {
+        margin-left: 10px;
+    }
+
+
+    .videos {
+        margin-left: 15px;
+        width: 368px;
+    }
+
+    .video-btn {
+        margin-left: 11px;
+    }
+
+    .heading {
+        margin-left: 1px;
+    }
+
+    .portfolio-content {
+        margin-left: 1px;
+    }
+
+    .testimonial-section {
+        margin-left: 1px;
+    }
+
+    .bmi-heading {
+        margin-left: 1px;
+    }
+
+    .bmi {
+        width: 472px;
+    }
+
+    .contact {
+        width: 505px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-text {
+        text-align: center;
+        width: 80%;
+    }
+
+    .contact-form {
+        margin-right: 3px;
+    }
+
+    .hr {
+        margin-left: 1px;
+    }
+
+    .copyright {
+        margin-left: 1px;
+    }
+}
+
+
+
+
+
+
+/* -------------------------------- MEDIA 426 ------------------------------- */
 
 @media (max-width: 426px) {
 
     header {
-       
+
         margin-top: 20px;
         justify-content: center;
         align-items: center;
     }
 
-.text-intermedio{
-    padding-right: 25px;
-}
-    #logo {
-        display: none;
-
+    .text-intermedio {
+        padding-right: 25px;
     }
 
-   
+    #logo {
+        display: none;
+    }
 
 
     .home-text {
