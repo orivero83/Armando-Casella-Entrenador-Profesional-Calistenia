@@ -137,6 +137,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 15px;
 }
 
 .text-intermedio {
@@ -449,7 +450,7 @@ header.sticky {
 
 .videos {
     position: relative;
-    min-width: 500px;
+    width: 500px;
     height: 80vh;
     border-radius: 15px;
     border: 10px solid white;
@@ -844,7 +845,10 @@ form textarea:focus {
 
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1441px) {
+    .about-content {
+        text-align: center;
+    }
 
     .text-intermedio {
         text-align: center;
@@ -879,11 +883,86 @@ form textarea:focus {
     .bmi-image img {
         display: none;
     }
-    
+
 
 }
 
 
+@media (max-width: 1025px){
+    .home {
+        margin-left: 15px;
+    }
+
+    .text-intermedio {
+        margin-left: 35px;
+    } 
+
+    .home-text {
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .container {
+        margin-left: 52px;
+    }
+
+    .about {
+        margin-left: 35px;
+    }
+
+
+    .videos {
+        margin-left: 32px;
+       
+    }
+
+    .video-btn {
+        margin-left: 20px;
+    }
+
+    .heading {
+        margin-left: 20px;
+    }
+
+    .portfolio-content {
+        margin-left: 35px;
+    }
+
+    .testimonial-section {
+        margin-left: 32px;
+    }
+
+    .bmi-heading {
+        margin-left: 15px;
+    }
+
+    .bmi {
+        width: 1000px;
+    }
+
+    .contact {
+        width: 1060px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-text {
+        text-align: center;
+        width: 80%;
+    }
+
+    .contact-form {
+        margin-right: 3px;
+    }
+
+    .hr {
+        margin-left: 11px;
+    }
+
+    .copyright {
+        margin-left: 55px;
+    }
+}
 
 
 @media (max-width: 970px) {
@@ -1023,7 +1102,7 @@ form textarea:focus {
         width: 500px;
     }
 
-   
+
 }
 
 
@@ -1031,6 +1110,12 @@ form textarea:focus {
 
 
 @media (max-width: 720px) {
+
+    #logo {
+        display: none;
+
+    }
+    
     :root {
         --heading-font: 3.5rem;
         --second-heading: 2.2rem;
@@ -1089,4 +1174,93 @@ form textarea:focus {
         width: 500px;
     }
 
+}
+
+
+
+@media (max-width: 426px) {
+
+    header {
+       
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+.text-intermedio{
+    padding-right: 25px;
+}
+    #logo {
+        display: none;
+
+    }
+
+   
+
+
+    .home-text {
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .container {
+        margin-left: 32px;
+    }
+
+    .about {
+        margin-left: 25px;
+    }
+
+
+    .videos {
+        margin-left: 32px;
+        width: 368px;
+    }
+
+    .video-btn {
+        margin-left: 17px;
+    }
+
+    .heading {
+        margin-left: 15px;
+    }
+
+    .portfolio-content {
+        margin-left: 32px;
+    }
+
+    .testimonial-section {
+        margin-left: 32px;
+    }
+
+    .bmi-heading {
+        margin-left: 15px;
+    }
+
+    .bmi {
+        width: 428px;
+    }
+
+    .contact {
+        width: 455px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-text {
+        text-align: center;
+        width: 80%;
+    }
+
+    .contact-form {
+        margin-right: 3px;
+    }
+
+    .hr {
+        margin-left: 11px;
+    }
+
+    .copyright {
+        margin-left: 55px;
+    }
 }
