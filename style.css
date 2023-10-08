@@ -1096,6 +1096,8 @@ form textarea:focus {
         text-align: center;
     }
 
+
+
     .bmi {
         width: 500px;
     }
@@ -1104,12 +1106,9 @@ form textarea:focus {
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
 
-    #logo {
-        display: none;
 
-    }
 
     :root {
         --heading-font: 3.5rem;
@@ -1142,6 +1141,20 @@ form textarea:focus {
         padding: 10px;
     }
 
+    .centrar section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .centrar section .bmi {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .bmi {
         width: 455px;
         text-align: center;
@@ -1170,24 +1183,25 @@ form textarea:focus {
     }
 
 }
+
 /* -------------------------------- MEDIA 500 ------------------------------- */
 
 
-@media (max-width: 501px) {
+@media (min-width: 501px) and (max-width:720px) {
 
     header {
         margin-top: 20px;
         justify-content: center;
         align-items: center;
-        
+
     }
 
-    
+
     #logo {
         display: none;
     }
 
-    
+
 
     .home-text {
         margin-right: 30px;
@@ -1228,6 +1242,20 @@ form textarea:focus {
 
     .testimonial-section {
         margin-left: 1px;
+    }
+
+    .centrar section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .centrar section .bmi {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .bmi-heading {
@@ -1272,14 +1300,14 @@ form textarea:focus {
 @media (max-width: 426px) {
 
     header {
-
         margin-top: 20px;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .text-intermedio {
-        padding-right: 25px;
+        padding-right: 40px;
     }
 
     #logo {
@@ -1288,7 +1316,7 @@ form textarea:focus {
 
 
     .home-text {
-        margin-left: 30px;
+        margin-left: 20px;
         text-align: center;
     }
 
@@ -1322,27 +1350,43 @@ form textarea:focus {
         margin-left: 32px;
     }
 
+    .centrar section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .centrar section .bmi {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .bmi-heading {
         margin-left: 15px;
     }
 
     .bmi {
         width: 428px;
+        margin-left: 15px;
     }
 
     .contact {
-        width: 455px;
         justify-content: center;
         align-items: center;
+        
     }
 
     .contact-text {
         text-align: center;
         width: 80%;
+        margin-left: 30px;
     }
 
     .contact-form {
-        margin-right: 3px;
+        margin-left: 30px;
     }
 
     .hr {

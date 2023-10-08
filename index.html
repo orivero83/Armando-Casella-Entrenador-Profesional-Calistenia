@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Personal Trainer</title>
     <!---custom css link--->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -249,99 +250,102 @@
     <!-- FIN testimonios -->
 
 
-    <!-- --------------------------- BMI calculator ---------------------------- -->
-    <section >
-        <div class="bmi-heading">
-            <h1>BMI Calculator</h1>
-            <h4> Underweight: BMI less than 18.5</h4>
-            <h4> Ideal weight: BMI between 18.5 and 24.9</h4>
-            <h4> Overweight: BMI greater than or equal to 25 </h4>
-        </div>
-        <div class="bmi">
-            <div>
-                <form id="bmiForm">
-                    <label for="height">Height (cm):</label>
-                    <input type="number" id="height" name="height" required><br><br>
+    <div class="centrar">
+        <!-- --------------------------- BMI calculator ---------------------------- -->
+        <section>
+            <div class="bmi-heading">
+                <h1>BMI Calculator</h1>
+                <h4> Underweight: BMI less than 18.5</h4>
+                <h4> Ideal weight: BMI between 18.5 and 24.9</h4>
+                <h4> Overweight: BMI greater than or equal to 25 </h4>
+            </div>
+            <div class="bmi">
+                <div>
+                    <form id="bmiForm">
+                        <label for="height">Height (cm):</label>
+                        <input type="number" id="height" name="height" required><br><br>
 
-                    <label for="weight">Weight (kg):</label>
-                    <input type="number" id="weight" name="weight" required><br><br>
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" name="weight" required><br><br>
 
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" name="age" required><br><br>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required><br><br>
 
-                    <label for="gender">Gender:</label>
-                    <select id="gender" name="gender" required>
-                        <option value="select">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="select">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
 
-                    </select><br><br>
+                        </select><br><br>
 
-                    <label class="bmi-label "  for="activity">Activity Factor:</label>
-                    <select id="activity" name="activity">
-                        <option value="select">Select</option>
-                        <option value="1.2">Sedentary (little or no exercise)</option>
-                        <option value="1.375">Lightly active (light exercise/sports 1-3 days/week)</option>
-                        <option value="1.55">Moderately active (moderate exercise/sports 3-5 days/week)</option>
-                        <option value="1.725">Very active (hard exercise/sports 6-7 days/week)</option>
-                        <option value="1.9">Super active (very hard exercise/sports & physical job or 2x training)
-                        </option>
-                    </select><br><br>
+                        <label class="bmi-label " for="activity">Activity Factor:</label>
+                        <select id="activity" name="activity">
+                            <option value="select">Select</option>
+                            <option value="1.2">Sedentary (little or no exercise)</option>
+                            <option value="1.375">Lightly active (light exercise/sports 1-3 days/week)</option>
+                            <option value="1.55">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                            <option value="1.725">Very active (hard exercise/sports 6-7 days/week)</option>
+                            <option value="1.9">Super active (very hard exercise/sports & physical job or 2x training)
+                            </option>
+                        </select><br><br>
 
-                    <input class="input-button" type="button" value="Calculate" onclick="calculateBMI()">
-                    <input class="input-button" type="reset" value="Reset" onclick="resetForm()">
+                        <input class="input-button" type="button" value="Calculate" onclick="calculateBMI()">
+                        <input class="input-button" type="reset" value="Reset" onclick="resetForm()">
+                    </form>
+
+                    <h2>Your BMI</h2>
+                    <div id="result"></div>
+                </div>
+                <div class="bmi-image">
+                    <img src="bmi.png" alt="">
+
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------- FIN BMI calculator -------------------------- -->
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="contact">
+            <div class="contact-text">
+                <h2>Contact Me</h2>
+                <h4>Contact With Us Any Time</h4>
+                <p>Lorem ipsum, dolor st. Fugit, harum sunt! Totam officia maiores
+                    praesentium?</p>
+                <div class="contact-list">
+                    <ul>
+                        <li>Italy</li>
+                        <li>acasellabrito@gmail.com</li>
+                        <li>+393475969523</li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@armandocasella?_t=8YjZBBYw0qz&_r=1"><i
+                            class="bx bxl-tiktok"></i></a>
+                    <a href="https://www.facebook.com/armando.casella"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/armandocasella/?hl=es-la"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://wa.me/+393475969523"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="form">
+                    <input type="text" name="sendername" id="sendername" placeholder="Sender name" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    <textarea type="text" name="message" id="message" cols="30" rows="10"
+                        placeholder="Enter Your Message" required></textarea>
+                    <input class="btn-neon-morado" type="submit" id="button" value="Send Email">
+                    <div id="messageBox" class="message-box"></div>
                 </form>
-
-                <h2>Your BMI</h2>
-                <div id="result"></div>
             </div>
-            <div class="bmi-image">
-                <img src="bmi.png" alt="">
 
-            </div>
-        </div>
-    </section>
-    <!-- ------------------------- FIN BMI calculator -------------------------- -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="contact">
-        <div class="contact-text">
-            <h2>Contact Me</h2>
-            <h4>Contact With Us Any Time</h4>
-            <p>Lorem ipsum, dolor st. Fugit, harum sunt! Totam officia maiores
-                praesentium?</p>
-            <div class="contact-list">
-                <ul>
-                    <li>Italy</li>
-                    <li>acasellabrito@gmail.com</li>
-                    <li>+393475969523</li>
-                </ul>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.tiktok.com/@armandocasella?_t=8YjZBBYw0qz&_r=1"><i class="bx bxl-tiktok"></i></a>
-                <a href="https://www.facebook.com/armando.casella"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/armandocasella/?hl=es-la"><i class="bx bxl-instagram"></i></a>
-                <a href="https://wa.me/+393475969523"><i class="bx bxl-whatsapp"></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form id="form">
-                <input type="text" name="sendername" id="sendername" placeholder="Sender name" required>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                <textarea type="text" name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message"
-                    required></textarea>
-                <input class="btn-neon-morado" type="submit" id="button" value="Send Email">
-                <div id="messageBox" class="message-box"></div>
-            </form>
-        </div>
-
-    </section>
-    <!-- Contact Section End -->
-    <div class="hr"></div>
-    <div class="copyright">
+        </section>
+        <!-- Contact Section End -->
+        <div class="hr"></div>
+        <div class="copyright">
             &copy; 2023 Oscar Rivero. Todos los derechos reservados.
-    </div>
+        </div>
 
+    </div>
     <!---custom js links--->
     <!--emailjs  -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
